@@ -9,7 +9,7 @@ public class IDLookupDocument {
     private Integer idValue;
 
     public IDLookupDocument(Map<String, Object> databaseValue) {
-        this.idValue = (Integer) databaseValue.getOrDefault(QcCommonConstants.LOOKUP_DOC_LATEST_ID, null);
+        this.idValue = ((Long) databaseValue.getOrDefault(QcCommonConstants.LOOKUP_DOC_LATEST_ID, null)).intValue();
     }
 
     public Integer getIdValue() {
