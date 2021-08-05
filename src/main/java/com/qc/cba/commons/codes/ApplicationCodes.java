@@ -14,7 +14,11 @@ public enum ApplicationCodes {
     FIREBASE_DOCUMENT_NOT_EXIST(10008, "Requested Firebase document not available in Firestore"),
     FIREBASE_DOCUMENT_NOT_RETRIEVED(10009, "Available Firestore document is not retrieved"),
     INVALID_DATE_FORMAT_PARSE_TIMESTAMP(10010, "Invalid String Date Format found when parsing to Timestamp"),
-    INVALID_DATE_TIME_FORMAT_PARSE_TIMESTAMP(10011, "Invalid String DateTime Format found when parsing to Timestamp");
+    INVALID_DATE_TIME_FORMAT_PARSE_TIMESTAMP(10011, "Invalid String DateTime Format found when parsing to Timestamp"),
+    FIREBASE_DOCUMENT_ALREADY_EXISTS(10012, "Requested Firebase document already available in Firestore"),
+    NOT_ADMIN_USER(10013, "Operation requested by a non admin user"),
+    DEFAULT_USER(10014, "Requested operation cannot be performed on a default user"),
+    ;
 
     private int appCode;
     private String appCodeDescription;

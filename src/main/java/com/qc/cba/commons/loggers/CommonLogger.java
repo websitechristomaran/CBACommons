@@ -24,7 +24,7 @@ public class CommonLogger {
     private CommonLogger() {
     }
 
-    private static String QC_LOG_PREFIX = "[QC Log] ";
+    private static String QC_LOG_PREFIX = "[CBA | QC Log] ";
 
     private static Logger getLoggerObject(Class<?> value) {
         return Logger.getLogger(value.getName());

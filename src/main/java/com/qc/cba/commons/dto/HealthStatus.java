@@ -7,10 +7,12 @@ public class HealthStatus {
 
     private String status;
     private String productOwner;
+    private String developerName;
 
     public HealthStatus(String uri) {
         this.status = "UP";
         this.productOwner = QcSwagger.COMPANY;
+        this.developerName = "Maria Irudaya Regilan J";
     }
 
     @JsonProperty("Status")
@@ -21,5 +23,10 @@ public class HealthStatus {
     @JsonProperty("ProductOwner")
     public String getProductOwner() {
         return productOwner;
+    }
+
+    @JsonProperty("DeveloperName")
+    public String getDeveloperName() {
+        return developerName;
     }
 }

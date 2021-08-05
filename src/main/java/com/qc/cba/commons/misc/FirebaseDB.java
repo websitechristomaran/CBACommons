@@ -18,6 +18,10 @@ public class FirebaseDB {
     private static FirebaseDB firebaseDB;
     private final String LOOKUP_DOCUMENT_NAME = "lookup";
 
+    public String getLookUpDocumentName() {
+        return this.LOOKUP_DOCUMENT_NAME;
+    }
+
     public static FirebaseDB connect() {
         if (Validator.isNull(FirebaseDB.firebaseDB))
             FirebaseDB.firebaseDB = new FirebaseDB();
